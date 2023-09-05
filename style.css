@@ -1,0 +1,94 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+500 height
+320 width
+## Colors
+font-family: Outfit, Sans-serif;
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Light-gray);
+}
+
+.card {
+  height: 31.25rem;
+  width: 20rem;
+  background: var(--White);
+  border-radius: 2rem;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+img {
+  height: 18.125rem;
+  width: 18.125rem;
+  border-radius: 1rem;
+}
+
+.improve {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  font-family: Outfit, Sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: var(--Dark-blue);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.scan {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Outfit, Sans-serif;
+  font-weight: 400;
+  margin-left: 1rem;
+  color: var(--Grayish-blue);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+}
